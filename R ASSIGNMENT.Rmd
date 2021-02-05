@@ -1,0 +1,85 @@
+---
+title: "R ASSIGNMENT FEB 4"
+author: "FAHEEM FARAS V"
+date: "2/5/2021"
+output: html_document
+---
+
+#Q.NO.1
+
+```{r}
+
+data = read.csv ("https://www.stats.govt.nz/assets/Uploads/Government-finance-statistics-general-government/Government-finance-statistics-general-government-Year-ended-June-2020/Download-data/government-finance-statistics-general-government-year-ended-june-2020-csv.csv",sep = ",", na.strings = "NA", strip.white = TRUE, stringsAsFactors = FALSE)
+
+data
+head(data)
+typeof(data)
+```
+#Q.NO.2
+
+```{r}
+mat.a <- matrix(
+c(4, 5, 7, 8, 0, 9, 5, 4, 8),
+nrow = 3,
+ncol = 3,
+byrow = TRUE)
+mat.a
+
+#transpose
+mat.a.transpose = t(mat.a)
+
+mat.a.transpose
+
+
+#create new matrix (mat.b)
+mat.b <- matrix(
+c(14, 52, 75, 89, 10, 91, 51, 44, 28),
+nrow = 3,
+ncol = 3,
+byrow = TRUE)
+mat.b
+
+#Addition
+sum <- mat.a + mat.b
+print(sum)
+
+#Subtraction
+sub <- mat.a - mat.b
+print(sub)
+
+#Multiplication
+prod <- mat.a*mat.b
+print(prod)
+
+  
+```
+#Q.NO.4
+
+```{r}
+vector.1 = c(1, 3, 5, 7, 9, 11, 13)
+vector.2 = c(2, 4, 6, 8, 10, 12, 14)
+vector.1
+vector.2
+
+vector.1 + vector.2
+vector.1 - vector.2
+vector.1 * vector.2
+vector.1 / vector.2
+
+cbind(vector.1, vector.2)
+rbind(vector.1, vector.2)
+
+as.numeric(vector.1)
+as.numeric(vector.2)
+
+as.character(vector.1)
+as.character(vector.2)
+```
+
+#Q.NO.5
+
+```{r}
+
+
+```
+
