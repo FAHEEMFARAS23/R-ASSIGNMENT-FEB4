@@ -79,7 +79,16 @@ as.character(vector.2)
 #Q.NO.5
 
 ```{r}
-
+employee.data <- data.frame(
+  employee.id = c (1:8),
+  employee.name = c("RICK","DAN","MICHELLE","RYAN","GARY","NINA", "SIMON","GURU"),
+  salary = c(623.3,515.2,611.0,729.0,843.25,578,632.8,722.5),
+  start.date = as.Date(c("2012-01-01", "2013-09-23", "2014-11-15", "2014-05-11","2015-03-27", "2013-05-21", "2013-07-30", "2014-06-17"),
+  dept = c("IT","OPERATIONS","IT","HR","FINANCE","IT","OPERATIONS","FINANCE")),
+  stringsAsFactors = FALSE)
+  employee.data
+print(employee.data)
 
 ```
+
 
